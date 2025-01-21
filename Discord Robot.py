@@ -1,5 +1,6 @@
 import discord
 
+token = "isi dgn token bot mu"
 intens = discord.Intents.all()
 intens.message_content = True
 
@@ -17,4 +18,4 @@ async def on_message(message):
     if message.content.startswith('!hi'):
         await message.reply('haloooo', mention_author = True)
 
-client.run("MTMzMDU5MzQ3Nzk4NTA0NjU5MA.Gz4Oaj.42_HQIewYE39J2NKZEtt-BoALBlSuDa8GLnLl8")
+client.run(token)
